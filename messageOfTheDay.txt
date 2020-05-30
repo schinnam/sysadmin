@@ -1,0 +1,10 @@
+Create message of the day
+
+Task:
+Update the message of the day on all application and db servers for Nautilus. Make use of the approved template located at /root/nautilus_banner on jump host
+
+Soulution:
+Message user sees after he logs into the system successfully is Message Of The Day & is controlled by /etc/motd file. Edit this file and enter the message you want to greet the user with once he successfully logged in.
+
+Ref:
+https://kerneltalks.com/tips-tricks/how-to-configure-login-banners-in-linux/
