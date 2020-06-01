@@ -10,3 +10,6 @@ c. We already have a user anita with password LQfKeWWxWD which you need to provi
 
 d. You can access the website on LBR link, to do so click on the + button on top of your terminal and select option Select port to view on Host 1 and after adding port 80 click on Display Port.
 
+
+Solution:
+https://www.server-world.info/en/note?os=CentOS_7&p=httpd&f=10
