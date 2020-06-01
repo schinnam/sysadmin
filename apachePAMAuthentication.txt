@@ -1,0 +1,12 @@
+Problem:
+The document root /var/www/html of all web apps is on NFS share /data on storage server in Stratos Datacenter. We have a requirement where we want to password protect a directory in Apache web server document root. We want to password protect http://<website-url>:<apache_port>/protected URL as per below given requirements (you can use any website-url for it like localhost since there are no such specific requirements as of now):
+
+
+a. We want to use basic authentication.
+
+b. We do not want to use htpasswd file base authentication instead we want to use PAM authentication i.e Basic Auth + PAM. So that we can authenticate with a Linux user itself.
+
+c. We already have a user anita with password LQfKeWWxWD which you need to provide access.
+
+d. You can access the website on LBR link, to do so click on the + button on top of your terminal and select option Select port to view on Host 1 and after adding port 80 click on Display Port.
+
