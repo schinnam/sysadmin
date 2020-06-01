@@ -1,0 +1,12 @@
+Problem:
+System admins team of xFusionCorp Industries has installed a backup agent tool on all app servers, as per tool's requirements they need to create a user with a non-interactive shell.
+
+So create a user named siva with a non-interactive shell in the app02 server.
+
+
+Solution:
+useradd siva -s /bin/false
+
+or 
+
+useradd siva -s /sbin/nologin
