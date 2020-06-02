@@ -3,15 +3,24 @@ We recently migrated one of our WordPress website from old server to a new infra
 
 
 a. Install/Configure MariaDB server.
+https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-centos-7
 
 b. Create a database with name kodekloud_db5.
+https://bertvv.github.io/cheat-sheets/MySQL-MariaDB.html
 
 c. There is a DB dump on jump_host under location /home/thor/db.sql. Restore this database in newly create database.
+https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-in-mysql-or-mariadb
+https://linuxize.com/post/how-to-use-linux-sftp-command-to-transfer-files/#sftp-commands
 
 d. Create a user kodekloud_aim and set any password you like.
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
 
 e. Grant full permissions to user kodekloud_aim on database kodekloud_db5.
 
+
 f. Update database related details in /data/wp-config.php file on storage server which is our NFS server having a share /data that is mounted on each app server on location /var/www/html. (for more details about how to update WordPress config file please visit https://wordpress.org/support/article/editing-wp-config-php/)
+https://wordpress.org/support/article/editing-wp-config-php/
+https://stackoverflow.com/questions/11603487/when-do-changes-to-wp-config-php-take-effect
+
 
 g. You can access the website on LBR link, to do so click on the + button on top of your terminal and select option Select port to view on Host 1 and after adding port 80 click on Display Port.
