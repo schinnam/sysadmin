@@ -24,3 +24,47 @@ https://stackoverflow.com/questions/11603487/when-do-changes-to-wp-config-php-ta
 
 
 g. You can access the website on LBR link, to do so click on the + button on top of your terminal and select option Select port to view on Host 1 and after adding port 80 click on Display Port.
+
+Solution:
+Setup Mariadb:
+sudo yum install mariadb-server
+sudo systemctl start mariadb
+sudo systemctl status mariadb
+sudo systemctl enable mariadb
+sudo mysql_secure_installation
+
+Enable Remote access to db: https://www.cyberciti.biz/tips/how-do-i-enable-remote-access-to-mysql-database-server.html
+
+Navigate DB:
+mysql -u root -p
+SHOW DATABASES;
+USE dbname;
+SHOW TABLES;
+CREATE DATABASE kodekloud_db5;
+
+Copy file to remote host using sftp:
+sftp peter@server_ip_or_hostname
+ls
+lls
+put db.sql
+
+Import DB dump:
+mysql -u root -p kodekloud_db5 < db.sql
+
+CREATE USER 'kodekloud_aim'@'%' IDENTIFIED BY 'password';
+select user,host from mysql.user;
+GRANT ALL PRIVILEGES ON kodekloud_db5 . * TO 'kodekloud_aim'@'%';
+FLUSH PRIVILEGES;
+
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'database_name_here' );
+/** MySQL database username */
+define( 'DB_USER', 'username_here' );
+/** MySQL database password */
+define( 'DB_PASSWORD', 'password_here' );
+/** MySQL hostname */
+define( 'DB_HOST', 'ip_addess' );
+
+
