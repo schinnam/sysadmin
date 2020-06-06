@@ -1,0 +1,17 @@
+There are some new tools have been installed on app server in Stratos Datacenter. 
+Some of these tools can only be managed from graphical interface. So there are some requirements 
+came up for these app servers.
+
+
+On all App servers in Stratos Datacenter change the default runlevel so that they can boot in GUI (graphical user interface) 
+by default.
+
+
+Sol:
+systemctl get-default
+systemctl set-default graphical.target
+
+Ref:
+https://www.liquidweb.com/kb/linux-runlevels-explained/
+https://www.itzgeek.com/how-tos/linux/centos-how-tos/change-default-runlevel-in-centos-7-rhel-7.html
+
