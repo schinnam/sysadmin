@@ -8,3 +8,5 @@ Ref:
 https://linuxize.com/post/how-to-install-iptables-on-centos-7/
 https://upcloud.com/community/tutorials/configure-iptables-centos/
 https://phoenixnap.com/kb/iptables-tutorial-linux-firewall#:~:text=Chains%3A%20A%20chain%20is%20a,forward%20another%20type%20of%20packet.
+
+https://www.linode.com/docs/web-servers/nginx/use-nginx-reverse-proxy/
