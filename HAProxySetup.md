@@ -23,3 +23,7 @@ Make changes to HAProxy config at /etc/haproxy/haproxy.cfg
 - Under frontend change port to 80
 - Under backend add servers - `server stapp01 172.16.238.10:3003 check`
  - Reload HAproxy
+
+
+Ref: 
+- https://www.howtoforge.com/tutorial/how-to-setup-haproxy-as-load-balancer-for-nginx-on-centos-7/
