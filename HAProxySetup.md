@@ -10,7 +10,8 @@ b. You can access the website on LBR link, to do so click on the + button on top
 Find the httpd port in app hosts in /etc/http/conf/httpd.conf
 
 Install HAProxy:
-``` yum install -y haproxy
+``` 
+yum install -y haproxy
 
 systemctl start haproxy
 systemctl status haproxy
