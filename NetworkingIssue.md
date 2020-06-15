@@ -36,3 +36,8 @@ systemctl restart iptables
 ```
 
 Worked!!!
+
+Ref:
+- https://www.maketecheasier.com/fix-no-route-to-host-error-linux/
+- https://www.maketecheasier.com/secure-linux-desktop-with-iptables/
+- https://community.kodekloud.com/t/linux-network-services-apache-not-running-on-app1-port-8081/5891/18
